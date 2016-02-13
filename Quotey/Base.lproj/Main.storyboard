@@ -41,10 +41,10 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-g3-lSV" userLabel="Author">
-                                        <rect key="frame" x="8" y="215" width="250" height="26"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-g3-lSV" userLabel="Author">
+                                        <rect key="frame" x="8" y="215" width="250" height="44"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="26" id="hcM-ie-KMg"/>
+                                            <constraint firstAttribute="height" constant="44" id="hcM-ie-KMg"/>
                                             <constraint firstAttribute="width" constant="250" id="uoF-04-mVX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="18"/>
@@ -93,7 +93,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Cr2-Al-gnD" secondAttribute="trailing" constant="8" id="AoW-jf-cSP"/>
                                     <constraint firstItem="Cr2-Al-gnD" firstAttribute="top" secondItem="IFd-CT-872" secondAttribute="top" constant="8" id="EGY-gW-QEN"/>
                                     <constraint firstItem="k7O-g3-lSV" firstAttribute="top" secondItem="Cr2-Al-gnD" secondAttribute="bottom" constant="8" id="Mnb-c0-hee"/>
-                                    <constraint firstItem="5F1-iU-aJe" firstAttribute="top" secondItem="k7O-g3-lSV" secondAttribute="bottom" constant="60" id="PjB-on-qh7"/>
+                                    <constraint firstItem="5F1-iU-aJe" firstAttribute="top" secondItem="k7O-g3-lSV" secondAttribute="bottom" constant="42" id="PjB-on-qh7"/>
                                     <constraint firstAttribute="trailing" secondItem="5F1-iU-aJe" secondAttribute="trailing" constant="61" id="RBb-kk-ALW"/>
                                     <constraint firstItem="k7O-g3-lSV" firstAttribute="leading" secondItem="IFd-CT-872" secondAttribute="leading" constant="8" id="Yhc-rN-FXH"/>
                                     <constraint firstAttribute="trailing" secondItem="k7O-g3-lSV" secondAttribute="trailing" constant="30" id="bxo-bO-nqF"/>

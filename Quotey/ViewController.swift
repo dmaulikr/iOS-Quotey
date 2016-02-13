@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     
     @IBAction func newQuoteButton(sender: AnyObject) {
         getNewQuote()
+        designView()
     }
     
     override func viewDidLoad() {
@@ -75,6 +76,13 @@ class ViewController: UIViewController {
                         self.quoteLabel.text = quote
                 }
         }
+        
+    }
+    
+    func designView() {
+        quoteView.alpha = 0
+
+        // Pick/Apply Random Color
         let colors = [0x6124f0, 0x6cce46, 0xce4c46, 0x1b81bb, 0xba0306]
         let randomColor = Int(arc4random_uniform(UInt32(colors.count)))
         
@@ -83,9 +91,7 @@ class ViewController: UIViewController {
         authorLabel.textColor = colorize(colors[randomColor], alpha: 1.0)
         newQuote.backgroundColor = colorize(colors[randomColor], alpha: 1.0)
         tweetQuote.backgroundColor = colorize(colors[randomColor], alpha: 1.0)
-    }
-    
-    func designView() {
+        
         // Button Shaping
         quoteView.layer.cornerRadius = 10
         quoteView.clipsToBounds = true
@@ -93,6 +99,11 @@ class ViewController: UIViewController {
         newQuote.clipsToBounds = true
         tweetQuote.layer.cornerRadius = 5
         tweetQuote.clipsToBounds = true
+        
+        // Opacity Animation
+        UIView.animateWithDuration(1.0) {
+            self.quoteView.alpha = 1
+        }
     }
     
     func createTweet() {
