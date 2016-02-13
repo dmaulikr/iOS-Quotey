@@ -30,42 +30,76 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-CT-872">
                                 <rect key="frame" x="16" y="96" width="288" height="375"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr2-Al-gnD" userLabel="Quote">
-                                        <rect key="frame" x="35" y="8" width="210" height="184"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr2-Al-gnD" userLabel="Quote">
+                                        <rect key="frame" x="8" y="8" width="272" height="199"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="199" id="2pv-xu-OYs"/>
+                                            <constraint firstAttribute="width" constant="272" id="deb-8j-PBp"/>
+                                        </constraints>
                                         <string key="text">Lorem ipdum knjerfkjn ene  ekje kjn  3njk njke  enl  nle ne n nl ele ln kj kjn knj kjn jkn jknek wnwelwn lm mk l l m lk m km lm  lml mm lmm m ml mk mm lkm mlk m ml lm m m lm GGG EEQ WRE $@$#T# %HT$  $</string>
-                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-g3-lSV" userLabel="Author">
-                                        <rect key="frame" x="35" y="215" width="205" height="21"/>
-                                        <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="14"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-g3-lSV" userLabel="Author">
+                                        <rect key="frame" x="8" y="215" width="250" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="hcM-ie-KMg"/>
+                                            <constraint firstAttribute="width" constant="250" id="uoF-04-mVX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Ubuntu-Light" family="Ubuntu" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyI-f4-Y7d">
-                                        <rect key="frame" x="145" y="255" width="100" height="44"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
-                                        <state key="normal" title="New Quote">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="newQuoteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jFG-Wt-sCj"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zng-5s-fdq">
-                                        <rect key="frame" x="65" y="255" width="44" height="44"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" backgroundImage="TwitterLogo_white"/>
-                                        <connections>
-                                            <action selector="tweetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DU7-Gj-Ymd"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="5F1-iU-aJe">
+                                        <rect key="frame" x="61" y="301" width="166" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zng-5s-fdq">
+                                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="G6Z-iu-hpl"/>
+                                                    <constraint firstAttribute="width" constant="44" id="pgD-oH-yiE"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="TwitterLogo_white"/>
+                                                <connections>
+                                                    <action selector="tweetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DU7-Gj-Ymd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyI-f4-Y7d">
+                                                <rect key="frame" x="66" y="0.0" width="100" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="sMC-VN-y7M"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="17"/>
+                                                <state key="normal" title="New Quote">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="newQuoteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jFG-Wt-sCj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="6pP-A4-BfU"/>
+                                            <constraint firstAttribute="width" constant="166" id="lHV-w0-5hC"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="375" id="9AL-Wx-nWT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cr2-Al-gnD" secondAttribute="trailing" constant="8" id="AoW-jf-cSP"/>
+                                    <constraint firstItem="Cr2-Al-gnD" firstAttribute="top" secondItem="IFd-CT-872" secondAttribute="top" constant="8" id="EGY-gW-QEN"/>
+                                    <constraint firstItem="k7O-g3-lSV" firstAttribute="top" secondItem="Cr2-Al-gnD" secondAttribute="bottom" constant="8" id="Mnb-c0-hee"/>
+                                    <constraint firstItem="5F1-iU-aJe" firstAttribute="top" secondItem="k7O-g3-lSV" secondAttribute="bottom" constant="60" id="PjB-on-qh7"/>
+                                    <constraint firstAttribute="trailing" secondItem="5F1-iU-aJe" secondAttribute="trailing" constant="61" id="RBb-kk-ALW"/>
+                                    <constraint firstItem="k7O-g3-lSV" firstAttribute="leading" secondItem="IFd-CT-872" secondAttribute="leading" constant="8" id="Yhc-rN-FXH"/>
+                                    <constraint firstAttribute="trailing" secondItem="k7O-g3-lSV" secondAttribute="trailing" constant="30" id="bxo-bO-nqF"/>
+                                    <constraint firstItem="Cr2-Al-gnD" firstAttribute="leading" secondItem="IFd-CT-872" secondAttribute="leading" constant="8" id="epb-4L-7ir"/>
+                                    <constraint firstAttribute="bottom" secondItem="5F1-iU-aJe" secondAttribute="bottom" constant="30" id="lqw-jo-cFP"/>
+                                    <constraint firstItem="5F1-iU-aJe" firstAttribute="leading" secondItem="IFd-CT-872" secondAttribute="leading" constant="61" id="qBC-iK-xLo"/>
                                 </constraints>
                             </view>
                         </subviews>
