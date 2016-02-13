@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var quoteView: UIView!
     
     @IBAction func tweetButton(sender: AnyObject) {
-        
+        createTweet()
     }
     
     @IBAction func newQuoteButton(sender: AnyObject) {
@@ -96,6 +96,19 @@ class ViewController: UIViewController {
     }
     
     func createTweet() {
+        let composer = TWTRComposer()
+        
+        composer.setText(quoteLabel.text! + " " + authorLabel.text! + " #Quotey")
+        
+        // Called from a UIViewController
+        composer.showFromViewController(self) { result in
+            if (result == TWTRComposerResult.Cancelled) {
+                print("Tweet composition cancelled")
+            }
+            else {
+                print("Sending tweet!")
+            }
+        }
     }
 
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		699CFABC1C6EC1FE0060AF04 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699CFABB1C6EC1FE0060AF04 /* Accounts.framework */; };
 		785551EE1C6DA3D500D9ADA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785551ED1C6DA3D500D9ADA8 /* AppDelegate.swift */; };
 		785551F01C6DA3D500D9ADA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785551EF1C6DA3D500D9ADA8 /* ViewController.swift */; };
 		785551F31C6DA3D500D9ADA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 785551F11C6DA3D500D9ADA8 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		2B27AB5E217BE1860DB2C665 /* Pods_Quotey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		697A179F1C6EA85900C28FB3 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		699CFABB1C6EC1FE0060AF04 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		785551EA1C6DA3D500D9ADA8 /* Quotey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		785551ED1C6DA3D500D9ADA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		785551EF1C6DA3D500D9ADA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				699CFABC1C6EC1FE0060AF04 /* Accounts.framework in Frameworks */,
 				DC6C27E60D7E5C9BAFAA003C /* Pods_Quotey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +51,7 @@
 		2ECB54EFE6091F4D9F75F507 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				699CFABB1C6EC1FE0060AF04 /* Accounts.framework */,
 				697A179F1C6EA85900C28FB3 /* Twitter.framework */,
 				2B27AB5E217BE1860DB2C665 /* Pods_Quotey.framework */,
 			);
