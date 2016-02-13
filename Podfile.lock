@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (3.2.0)
+  - Fabric (1.6.5)
+  - SwiftyJSON (2.3.2)
+  - TwitterCore (1.15.1):
+    - Fabric
+  - TwitterKit (1.15.1):
+    - TwitterCore (= 1.15.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Fabric
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - TwitterKit
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 42bdb102d2624b143c07850ebdc1537d5b6579b6
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  Fabric: 338ffd3c2afcab120638907b4251189de9ad17b3
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TwitterCore: 12983a7464e34afbbf18881347898a9db526ac71
+  TwitterKit: b5821570887ec2d77650fa232eaec175665dc443
+
+COCOAPODS: 0.39.0
