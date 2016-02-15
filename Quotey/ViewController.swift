@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var newQuote: UIButton!
     @IBOutlet weak var tweetQuote: UIButton!
     @IBOutlet weak var quoteView: UIView!
+    @IBOutlet weak var infoButton: UIButton!
+    
     
     @IBAction func tweetButton(sender: AnyObject) {
         createTweet()

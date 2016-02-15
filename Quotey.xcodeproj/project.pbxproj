@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6967A1B21C719226002DA05C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967A1B11C719226002DA05C /* InfoViewController.swift */; };
 		699CFABC1C6EC1FE0060AF04 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 699CFABB1C6EC1FE0060AF04 /* Accounts.framework */; };
 		785551EE1C6DA3D500D9ADA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785551ED1C6DA3D500D9ADA8 /* AppDelegate.swift */; };
 		785551F01C6DA3D500D9ADA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785551EF1C6DA3D500D9ADA8 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		2B27AB5E217BE1860DB2C665 /* Pods_Quotey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quotey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6967A1B11C719226002DA05C /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		697A179F1C6EA85900C28FB3 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		699CFABB1C6EC1FE0060AF04 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		785551EA1C6DA3D500D9ADA8 /* Quotey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quotey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 			children = (
 				785551ED1C6DA3D500D9ADA8 /* AppDelegate.swift */,
 				785551EF1C6DA3D500D9ADA8 /* ViewController.swift */,
+				6967A1B11C719226002DA05C /* InfoViewController.swift */,
 				785551F11C6DA3D500D9ADA8 /* Main.storyboard */,
 				785551F41C6DA3D500D9ADA8 /* Assets.xcassets */,
 				785551F61C6DA3D500D9ADA8 /* LaunchScreen.storyboard */,
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				785551F01C6DA3D500D9ADA8 /* ViewController.swift in Sources */,
+				6967A1B21C719226002DA05C /* InfoViewController.swift in Sources */,
 				785551EE1C6DA3D500D9ADA8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

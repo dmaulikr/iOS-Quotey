@@ -11,6 +11,11 @@
         </mutableArray>
         <mutableArray key="Ubuntu-Regular.ttf">
             <string>Ubuntu</string>
+            <string>Ubuntu</string>
+            <string>Ubuntu</string>
+            <string>Ubuntu</string>
+            <string>Ubuntu</string>
+            <string>Ubuntu</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -29,7 +34,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-CT-872">
                                 <rect key="frame" x="16" y="96" width="288" height="375"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-g3-lSV" userLabel="Author">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-g3-lSV" userLabel="Author">
                                         <rect key="frame" x="8" y="215" width="250" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="hcM-ie-KMg"/>
@@ -80,7 +85,7 @@
                                             <constraint firstAttribute="height" constant="199" id="2pv-xu-OYs"/>
                                             <constraint firstAttribute="width" constant="272" id="deb-8j-PBp"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="64"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="22"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -100,16 +105,34 @@
                                     <constraint firstItem="5F1-iU-aJe" firstAttribute="leading" secondItem="IFd-CT-872" secondAttribute="leading" constant="61" id="qBC-iK-xLo"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NrM-Iz-mLS" userLabel="Info Button">
+                                <rect key="frame" x="120" y="526" width="80" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="MoY-fQ-gR1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="22"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Credits">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="t8w-fN-zLd" kind="modal" id="I2Y-dk-9ot"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="NrM-Iz-mLS" secondAttribute="bottom" constant="20" symbolic="YES" id="1Am-Td-d5e"/>
+                            <constraint firstItem="NrM-Iz-mLS" firstAttribute="centerX" secondItem="IFd-CT-872" secondAttribute="centerX" id="2LD-sq-F5i"/>
                             <constraint firstItem="IFd-CT-872" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3bm-Hp-Jyl"/>
                             <constraint firstItem="IFd-CT-872" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SLX-gh-b6Z"/>
                             <constraint firstItem="IFd-CT-872" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="a0N-aN-t7Y"/>
+                            <constraint firstItem="NrM-Iz-mLS" firstAttribute="top" secondItem="IFd-CT-872" secondAttribute="bottom" constant="55" id="gF5-ft-9wB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="authorLabel" destination="k7O-g3-lSV" id="BW1-ju-eCa"/>
+                        <outlet property="infoButton" destination="NrM-Iz-mLS" id="TWK-QO-3I8"/>
                         <outlet property="newQuote" destination="tyI-f4-Y7d" id="OHm-7B-n0P"/>
                         <outlet property="quoteLabel" destination="Cr2-Al-gnD" id="0n5-OO-0cI"/>
                         <outlet property="quoteView" destination="IFd-CT-872" id="65l-8V-oew"/>
@@ -119,6 +142,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="552" y="318"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="d1E-iF-PEM">
+            <objects>
+                <viewController id="t8w-fN-zLd" userLabel="Info View Controller" customClass="InfoViewController" customModule="Quotey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xfR-75-8YJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lnu-ci-24H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="McE-zi-tIa" userLabel="Info View">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7A-Zc-zLj" userLabel="Credit View">
+                                <rect key="frame" x="20" y="216" width="280" height="135"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Logo by Hannah Imes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTv-J7-WFJ" userLabel="Hannah">
+                                        <rect key="frame" x="4" y="22" width="272" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="dw7-JQ-xzY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="22"/>
+                                        <color key="textColor" red="0.80784313725490198" green="0.29803921568627451" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote API courtesy of Andrux.net" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmE-6Y-2lM" userLabel="Andrux">
+                                        <rect key="frame" x="4" y="59" width="272" height="59"/>
+                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="22"/>
+                                        <color key="textColor" red="0.80784313730000001" green="0.29803921570000003" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="DmE-6Y-2lM" firstAttribute="leading" secondItem="zTv-J7-WFJ" secondAttribute="leading" id="561-83-4hK"/>
+                                    <constraint firstItem="zTv-J7-WFJ" firstAttribute="centerX" secondItem="R7A-Zc-zLj" secondAttribute="centerX" id="776-Cw-tiy"/>
+                                    <constraint firstItem="DmE-6Y-2lM" firstAttribute="trailing" secondItem="zTv-J7-WFJ" secondAttribute="trailing" id="7Ph-f4-lHb"/>
+                                    <constraint firstItem="zTv-J7-WFJ" firstAttribute="top" secondItem="R7A-Zc-zLj" secondAttribute="top" constant="22" id="CuP-zZ-VCC"/>
+                                    <constraint firstItem="DmE-6Y-2lM" firstAttribute="top" secondItem="zTv-J7-WFJ" secondAttribute="bottom" constant="8" symbolic="YES" id="L5d-z2-p1h"/>
+                                    <constraint firstItem="zTv-J7-WFJ" firstAttribute="leading" secondItem="R7A-Zc-zLj" secondAttribute="leading" constant="4" id="Wgf-13-sm8"/>
+                                    <constraint firstAttribute="bottom" secondItem="DmE-6Y-2lM" secondAttribute="bottom" constant="17" id="pSl-e9-Zql"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyU-HW-1BO">
+                                <rect key="frame" x="120" y="526" width="80" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Cmk-jB-CvJ"/>
+                                    <constraint firstAttribute="height" constant="22" id="Ytj-39-OU4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="25"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeView:" destination="t8w-fN-zLd" eventType="touchUpInside" id="juL-9O-B26"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80784313730000001" green="0.29803921570000003" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="R7A-Zc-zLj" firstAttribute="top" secondItem="xfR-75-8YJ" secondAttribute="bottom" constant="196" id="06I-e0-PuS"/>
+                            <constraint firstItem="OyU-HW-1BO" firstAttribute="top" secondItem="R7A-Zc-zLj" secondAttribute="bottom" constant="175" id="5R5-sE-50t"/>
+                            <constraint firstItem="R7A-Zc-zLj" firstAttribute="centerY" secondItem="McE-zi-tIa" secondAttribute="centerY" id="aQ3-lp-YIi"/>
+                            <constraint firstItem="R7A-Zc-zLj" firstAttribute="leading" secondItem="McE-zi-tIa" secondAttribute="leadingMargin" constant="4" id="c42-Y0-g0C"/>
+                            <constraint firstAttribute="bottom" secondItem="OyU-HW-1BO" secondAttribute="bottom" constant="20" symbolic="YES" id="eZI-BW-oEw"/>
+                            <constraint firstItem="OyU-HW-1BO" firstAttribute="centerX" secondItem="McE-zi-tIa" secondAttribute="centerX" id="kOW-iI-9k5"/>
+                            <constraint firstItem="R7A-Zc-zLj" firstAttribute="centerX" secondItem="OyU-HW-1BO" secondAttribute="centerX" id="v6d-tt-TMm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="andrux" destination="DmE-6Y-2lM" id="pfa-x8-wZy"/>
+                        <outlet property="closeButton" destination="OyU-HW-1BO" id="sfM-hg-zcq"/>
+                        <outlet property="creditView" destination="R7A-Zc-zLj" id="bJU-F1-M0x"/>
+                        <outlet property="hannah" destination="zTv-J7-WFJ" id="fbo-TB-bIN"/>
+                        <outlet property="infoView" destination="McE-zi-tIa" id="681-yh-Dy2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pvR-lc-JZj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008" y="318"/>
         </scene>
     </scenes>
     <resources>
