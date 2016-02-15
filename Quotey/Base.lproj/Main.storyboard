@@ -11,7 +11,6 @@
         </mutableArray>
         <mutableArray key="Ubuntu-Regular.ttf">
             <string>Ubuntu</string>
-            <string>Ubuntu</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -30,17 +29,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFd-CT-872">
                                 <rect key="frame" x="16" y="96" width="288" height="375"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr2-Al-gnD" userLabel="Quote">
-                                        <rect key="frame" x="8" y="8" width="272" height="199"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="199" id="2pv-xu-OYs"/>
-                                            <constraint firstAttribute="width" constant="272" id="deb-8j-PBp"/>
-                                        </constraints>
-                                        <string key="text">Lorem ipdum knjerfkjn ene  ekje kjn  3njk njke  enl  nle ne n nl ele ln kj kjn knj kjn jkn jknek wnwelwn lm mk l l m lk m km lm  lml mm lmm m ml mk mm lkm mlk m ml lm m m lm GGG EEQ WRE $@$#T# %HT$  $</string>
-                                        <fontDescription key="fontDescription" name="Ubuntu" family="Ubuntu" pointSize="22"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7O-g3-lSV" userLabel="Author">
                                         <rect key="frame" x="8" y="215" width="250" height="44"/>
                                         <constraints>
@@ -86,6 +74,16 @@
                                             <constraint firstAttribute="width" constant="166" id="lHV-w0-5hC"/>
                                         </constraints>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr2-Al-gnD" userLabel="Quote">
+                                        <rect key="frame" x="8" y="8" width="272" height="199"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="199" id="2pv-xu-OYs"/>
+                                            <constraint firstAttribute="width" constant="272" id="deb-8j-PBp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="64"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
