@@ -81,6 +81,14 @@ class ViewController: UIViewController {
         
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let secondViewController = segue.destinationViewController as? InfoViewController {
+            secondViewController.view.backgroundColor = view.backgroundColor
+            secondViewController.hannah.textColor = view.backgroundColor
+            secondViewController.andrux.textColor = view.backgroundColor
+        }
+    }
+    
     func designView() {
         quoteView.alpha = 0
 
